@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    color: white;
+    background-image: linear-gradient(rgba(169, 185, 0, 0.335), rgba(0, 0, 0, 0.524)), url(img/main.jpg);
+    color: gold;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-family: serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    background-color: rgba(0, 0, 0, 0.907);
+    max-width: 450px;
+    min-width: 350px;
+    max-height: 450px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.703);
+    /* border-radius: 8px; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 550px;
+    align-items: center;
+}
+
+header {
+    font-size: 25px;
+    margin-top: 0.5rem;
+}
+
+.game_plane {
+    border: 2px solid white;
+    width: 30%;
+    height: 10%;
+    margin: 2.5rem auto;
+    padding: 1rem 0rem;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.game_plane span {
+    font-size:1.8em;
+    text-align: center;
+    padding: 0.3rem;
+
+}
+
+.label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+    position: absolute;
+    padding: 0.3rem 1rem;
+}
+
+
+#computer_side {
+    top: 30%;
+    right: -45%;
+}
+
+#user_side {
+    top: 30%;
+    left: -25%;
+}
+
+.result {
+    font-size: 1.4rem;
+    color: gold;
+    text-align: center;
+}
+
+.selection {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.choice {
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 10px;
+}
+
+.choice button {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.9rem;
+    background-color: rgb(255, 217, 0);
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: bolder;
+
+    /* transition:all 0.5s ease-in-out; */
+}
+
+.choice button:hover {
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.406);
+}
+
+.Activity {
+    font-size: 1.4rem;
+    color:white;
+    text-align: center;
+    margin-top: 35px;
+}
+
+/* media query */
+
+@media (max-width:600px) 
+{
+    #user_side{
+        transform: rotate(270deg);
+    }    
+    #computer_side{
+        right: -30%;
+        top: 35%;
+        transform: rotate(90deg);
+    }
+    header{
+        font-size: 20px;
+    }
+}
